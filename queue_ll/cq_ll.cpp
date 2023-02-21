@@ -73,11 +73,12 @@ void display()
     }
     else
     {
-        while (temp->next != front)
+        do
         {
             cout << temp->data << " ";
             temp = temp->next;
-        }
+        } while (temp != front);
+
         cout << endl;
     }
 }
